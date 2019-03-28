@@ -46,6 +46,10 @@ export class AuthService {
   }
 
   public isAuthenticated() {
+    console.log('isAuthenticated: ', this.authState$.getValue());
+    console.log('isAuthenticated: ', this.authState$.value);
+    console.log('isAuthenticated: ', this.authState$);
+
     return this.authState$.value;
   }
 }
